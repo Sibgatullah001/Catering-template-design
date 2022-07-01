@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&display=swap');
+
+/* ================
+Root
+Common class
+Header
+Home
+Work
+Food
+Footer
+================ */
+
+
+/* ================
+    Root
+================ */
+:root{
+    /* color */
+    --primary-color: #0b850b;
+    --body-color: #fff;
+    --body-light: #838383;
+    --dark-color: #000;
+
+    /* fontSize */
+    --font-h1: 3rem;
+
+    /* font-weight */
+    --font-bold: 600;
+    --font-extra-bold: 700;
+}
+
+/* ================
+    Common Class
+================ */
+.catering_btn {
+    background: var(--primary-color);
+    border-radius: 5px;
+    padding: 10px 20px !important;
+    color: var(--body-color) !important;
+    display: inline-block;
+    cursor: pointer;
+}
+h1{
+    font-family: 'Gentium Book Plus', serif;
+}
+p{
+    color: var(--body-light);
+    margin: 1rem 0 1.5rem;
+}
+section{
+    padding: 3rem 0;
+}
+.catering_content {
+    padding: 1rem 1.5rem;
+    box-shadow: 0 0 10px #dfdfdf;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+img{
+    height: 100%;
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+/* ================
+    Header
+================ */
+.nav_list {
+    gap: 1rem;
+}
+.nav-link{
+    padding: 10px 20px !important;
+    color: var(--body-light);
+    font-weight: var(--font-bold);
+}
+/* --------- //header --------- */
+
+
+/* ================
+    Home
+================ */
+.home{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+/* --------- //home --------- */
+
+/* ================
+    Work
+================ */
+.work svg {
+    padding: 10px;
+    border-radius: 50%;
+    background: #f1f1f1;
+}
+/* --------- //work --------- */
+
+/* ================
+    Food
+================ */
+.food_text{
+    padding: 0 30px;
+    text-align: justify;
+}
+.client_dtl {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+/* --------- //food --------- */
+
+/* ================
+    Footer
+================ */
+footer{
+    padding-top: 3rem;
+}
+footer li {
+    padding: 5px 0;
+}
+.form_submit, .social_media {
+    border-bottom: 1px solid #d7d6d6;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+.input_email {
+    border: none;
+    outline: none;
+    padding: 5px 0;
+}
+.social_media svg {
+    margin-right: 20px;
+    color: gray;
+}
+.copy_write {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0 0;
+}
+/* --------- //footer --------- */
+

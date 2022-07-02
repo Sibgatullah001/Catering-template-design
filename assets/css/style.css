@@ -2,11 +2,13 @@
 /* ================
 Google font
 Root
+Css base
 Common class
 Header
 Home
 Work
 Food
+Service
 Footer
 ================ */
 
@@ -26,7 +28,7 @@ Footer
     --body-color-light: #f1f1f1;
     --text-color-light: #838383;
     --body-color-shadow: #dfdfdf;
-    --dark-color: #000;
+    --dark-color: #343434;
 
     /* fontSize */
     --font-h1: 3rem;
@@ -36,6 +38,21 @@ Footer
     --font-extra-bold: 700;
 }
 
+/* ================
+    Css base
+================ */
+img{
+    height: auto;
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
 /* ================
     Common Class
 ================ */
@@ -52,7 +69,7 @@ Footer
     width: 100%;
     top: 0;
     bottom: 0;
-    background-color: var(--dark-color);
+    background-color: #000;
     opacity: .7;
     z-index: -1;
 }
@@ -60,12 +77,14 @@ Footer
     background: var(--primary-color);
     border-radius: 5px;
     padding: 10px 20px !important;
-    color: var(--body-color) !important;
+    color: var(--body-color-light) !important;
+    font-weight: var(--font-bold);
     display: inline-block;
     cursor: pointer;
 }
-h1{
+h1,h3,h5{
     font-family: 'Gentium Book Plus', serif;
+    color: var(--dark-color);
 }
 p{
     color: var(--text-color-light);
@@ -80,15 +99,6 @@ section{
     border-radius: 5px;
     margin-bottom: 2rem;
     background-color: var(--body-color);
-}
-
-img{
-    height: auto;
-    max-width: 100%;
-}
-ul{
-    list-style: none;
-    padding: 0;
 }
 
 /* ================
@@ -120,6 +130,9 @@ header{
     align-items: center;
     text-align: center;
     z-index: -1;
+}
+.home h1 , .home p{
+    color: var(--body-color-light);
 }
 /* --------- //home --------- */
 
@@ -153,6 +166,12 @@ header{
 .food_text{
     padding: 1.5rem;
     text-align: justify;
+    padding-bottom: 0;
+}
+.food_text a{
+    color: var(--primary-color);
+    font-weight: var(--font-bold);
+    text-decoration: underline;
 }
 .client_dtl {
     display: grid;
@@ -163,8 +182,21 @@ header{
 
 
 /* ================
+    Clients
+================ */
+.client_dtl span{
+    color: var(--body-color-shadow);
+    font-weight: var(--font-bold);
+}
+/* --------- //clients --------- */
+
+
+/* ================
     Service
 ================ */
+.service h3{
+    color: var(--body-color-light);
+}
 .service{
     background-image: url(../image/service_bg.jpg);
 }
@@ -189,6 +221,10 @@ footer li {
     border: none;
     outline: none;
     padding: 5px 0;
+}
+.form_submit button{
+    color: var(--body-color-shadow);
+    margin-left: 4rem;
 }
 .social_media svg {
     margin-right: 20px;

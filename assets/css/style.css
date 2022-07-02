@@ -32,6 +32,23 @@ Footer
 /* ================
     Common Class
 ================ */
+.catering_bg{
+    position: relative;
+    background-image: url(../image/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+.catering_bg::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .7;
+    z-index: -1;
+}
 .catering_btn {
     background: var(--primary-color);
     border-radius: 5px;
@@ -58,7 +75,7 @@ section{
 }
 
 img{
-    height: 100%;
+    height: auto;
     max-width: 100%;
 }
 ul{

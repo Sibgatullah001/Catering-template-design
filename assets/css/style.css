@@ -41,7 +41,7 @@ Footer
 ================ */
 .catering_bg{
     position: relative;
-    background-image: url(../image/img1.jpg) !important;
+    background-image: url(../image/background_img.jpg);
     background-position: center;
     background-size: cover;
     z-index: 0;
@@ -140,12 +140,16 @@ header{
     padding: 10px;
     border-radius: 50%;
     background: var(--body-color-light);
+    margin: 10px 0;
 }
 /* --------- //work --------- */
 
 /* ================
     Food
 ================ */
+.food{
+    padding: 6rem 0;
+}
 .food_text{
     padding: 1.5rem;
     text-align: justify;
@@ -156,6 +160,16 @@ header{
     align-items: center;
 }
 /* --------- //food --------- */
+
+
+/* ================
+    Service
+================ */
+.service{
+    background-image: url(../image/service_bg.jpg);
+}
+/* --------- //service --------- */
+
 
 /* ================
     Footer

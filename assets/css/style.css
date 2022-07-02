@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&display=swap');
 
 /* ================
+Google font
 Root
 Common class
 Header
@@ -10,6 +10,11 @@ Food
 Footer
 ================ */
 
+/* ================
+    Google font
+================ */
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&display=swap');
+
 
 /* ================
     Root
@@ -18,7 +23,9 @@ Footer
     /* color */
     --primary-color: #0b850b;
     --body-color: #fff;
-    --body-light: #838383;
+    --body-color-light: #f1f1f1;
+    --text-color-light: #838383;
+    --body-color-shadow: #dfdfdf;
     --dark-color: #000;
 
     /* fontSize */
@@ -45,7 +52,7 @@ Footer
     width: 100%;
     top: 0;
     bottom: 0;
-    background-color: #000;
+    background-color: var(--dark-color);
     opacity: .7;
     z-index: -1;
 }
@@ -61,7 +68,7 @@ h1{
     font-family: 'Gentium Book Plus', serif;
 }
 p{
-    color: var(--body-light);
+    color: var(--text-color-light);
     margin: 1rem 0 1.5rem;
 }
 section{
@@ -69,7 +76,7 @@ section{
 }
 .catering_content {
     padding: 1rem 1.5rem;
-    box-shadow: 0 0 10px #dfdfdf;
+    box-shadow: 0 0 10px var(--body-color-shadow);
     border-radius: 5px;
     margin-bottom: 2rem;
 }
@@ -86,12 +93,19 @@ ul{
 /* ================
     Header
 ================ */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: var(--body-color);
+}
 .nav_list {
     gap: 1rem;
 }
 .nav-link{
     padding: 10px 20px !important;
-    color: var(--body-light);
+    color: var(--text-color-light);
     font-weight: var(--font-bold);
 }
 /* --------- //header --------- */
@@ -101,7 +115,7 @@ ul{
     Home
 ================ */
 .home{
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     text-align: center;
@@ -114,7 +128,7 @@ ul{
 .work svg {
     padding: 10px;
     border-radius: 50%;
-    background: #f1f1f1;
+    background: var(--body-color-light);
 }
 /* --------- //work --------- */
 
@@ -122,7 +136,7 @@ ul{
     Food
 ================ */
 .food_text{
-    padding: 0 30px;
+    padding: 0 1.5rem;
     text-align: justify;
 }
 .client_dtl {
@@ -142,8 +156,8 @@ footer li {
     padding: 5px 0;
 }
 .form_submit, .social_media {
-    border-bottom: 1px solid #d7d6d6;
-    margin-bottom: 15px;
+    border-bottom: 1px solid var(--body-color-light);
+    margin-bottom: 1rem;
     padding-bottom: 10px;
 }
 .input_email {
@@ -153,7 +167,7 @@ footer li {
 }
 .social_media svg {
     margin-right: 20px;
-    color: gray;
+    color: var(--text-color-light);
 }
 .copy_write {
     display: flex;

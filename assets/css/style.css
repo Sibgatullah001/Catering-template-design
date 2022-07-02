@@ -94,11 +94,12 @@ ul{
     Header
 ================ */
 header{
-    position: fixed;
+    position: fixed !important;
     width: 100%;
     top: 0;
     z-index: 1;
     background-color: var(--body-color);
+    box-shadow: 0 0 10px var(--body-color-shadow);
 }
 .nav_list {
     gap: 1rem;

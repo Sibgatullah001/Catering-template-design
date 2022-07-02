@@ -129,7 +129,6 @@ header{
     display: flex;
     align-items: center;
     text-align: center;
-    z-index: -1;
 }
 .home h1 , .home p{
     color: var(--body-color-light);
@@ -141,8 +140,9 @@ header{
 ================ */
 .work{
     position: relative;
+    z-index: 0;
 }
-.work_bg img {
+.work_bg {
     position: absolute;
     width: 500px;
     right: 0;
